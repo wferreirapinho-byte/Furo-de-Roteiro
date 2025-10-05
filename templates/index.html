@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de Filmes</title>
+    <!-- Linkando o arquivo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Bem-Vindo Ao Furo De Roteiro</h1>
+    
+    <form method="POST">
+        <label for="categoria">Escolha uma categoria de filme:</label>
+        <select name="categoria" id="categoria">
+            <option value="Ação">Ação</option>
+            <option value="Comédia">Comédia</option>
+            <option value="Drama">Drama</option>
+            <option value="Terror">Terror</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Ficção Científica">Ficção Científica</option>
+        </select>
+        <button type="submit">Escolher Filme</button>
+    </form>
+
+    {% if filme %}
+    <h2>Filme sugerido: {{ filme }}</h2>
+    {% endif %}
+
+    <footer>
+        <p>Feito com 💚 por Você!</p>
+    </footer>
+</body>
+</html>
+
+
+

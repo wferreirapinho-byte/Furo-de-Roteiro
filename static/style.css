@@ -1,0 +1,101 @@
+/* Resetando os estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("/static/background.jpg");  /* Caminho correto para a imagem */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;  /* Efeito parallax */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para o título */
+h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* Estilo dos rótulos */
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+/* Estilo do campo select */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+/* Exibição do filme sugerido */
+h2 {
+    margin-top: 30px;
+}
+
+/* Estilo do rodapé */
+footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #eee;
+}
+
+/* Regras para dispositivos móveis */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
