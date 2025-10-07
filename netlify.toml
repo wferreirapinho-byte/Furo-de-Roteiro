@@ -1,0 +1,6 @@
+[build]
+  functions = "netlify"  # ou "functions", dependendo do nome da pasta
+  publish = "public"     # A pasta onde os arquivos estáticos ficam
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
