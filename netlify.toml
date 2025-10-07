@@ -1,6 +1,6 @@
 [build]
-  functions = "netlify"  # ou "functions", dependendo do nome da pasta
-  publish = "public"     # A pasta onde os arquivos estáticos ficam
+publish = "static"  # Alterando para a pasta que contém os arquivos estáticos
+command = "python app.py"  # Mantendo o comando para rodar o servidor Flask
 
 [[plugins]]
-  package = "@netlify/plugin-functions-install-core"
+package = "@netlify/plugin-functions-install-core"
