@@ -12,3 +12,6 @@ def handler(event, context):
         'statusCode': 200,
         'body': json.dumps({'message': 'Funcionando!'})
     }
+
+if __name__ == '__main__':
+    app.run(debug=True)
