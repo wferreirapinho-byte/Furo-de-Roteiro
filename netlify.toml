@@ -1,7 +1,6 @@
 [build]
-  publish = "static"   # Pasta onde o Netlify vai procurar os arquivos públicos
-  functions = "functions"  # Diretório onde as funções são armazenadas, se houver
+  publish = "."  # Este é o diretório correto que contém seus arquivos
+  functions = "netlify/functions"  # Mantenha se você for usar funções no Netlify
 
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"
-
